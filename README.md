@@ -1,2 +1,3 @@
 # Reveil-Connecte-
-Créer un réveil intelligent qui affiche l'heure, déclenche une alarme programmée, et donne en temps réel les données météo locales (température, humidité, luminosité).
+Ce projet est réalisé dans le cadre du module Communication Sans Fil en Licence 1 à l’Université
+Nice Sophia Antipolis
