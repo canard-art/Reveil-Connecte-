@@ -1,26 +1,36 @@
 # Réveil Connecté
-Ce projet est réalisé dans le cadre du module Communication Sans Fil en Licence 1 à l’Université
+📄 Ce projet est réalisé dans le cadre du module Communication Sans Fil en Licence 1 à l’Université
 Nice Sophia Antipolis
 
 Un réveil qui affiche l’heure, la température, l’humidité et la luminosité, avec alarme programmable et consultation à distance via le web.
 
-## Matériel utilisé
+## 🛠️ Matériel utilisé
 - UCA board version 2021
 - Capteurs : température/humidité (DHT22), luminosité (LDR)
 - Écran OLED
+- Câbles
 - Buzzer
 
-## Fonctionnalités
-- Affichage en temps réel sur écran OLED
+## 📦 Organisation du dépôt
+
+- `arduino/` : Code microcontrôleur
+- `python/` : Script pour synchroniser l’heure depuis le PC
+- `web/` : (optionnel) fichiers du site web embarqué
+- `docs/` : Schémas, images, documentation
+
+## ⚡Fonctionnalités
+- Affichage de l’heure en temps réel
+- Mesure température, humidité, luminosité
 - Alarme programmable
-- Page web consultable sur smartphone/PC pour voir les mesures à distance
+- Affichage des infos sur écran OLED et sur page web consultable sur smartphone/PC
 
-## Installation
-1. Branche les composants selon le schéma (voir dossier `docs/`).
-2. Téléverse le code Arduino/ESP32 (`arduino/`).
-3. Lance le script Python sur le PC (`python/send_time_pc.py`) si besoin de synchroniser l'heure.
-4. Accède à la page web (voir instructions dans le dossier `web/`).
+## 🚀 Installation
+1. **Branche les composants** (voir schéma dans `docs/`).
+2. **Téléverse le code du dossier `arduino/`** sur le microcontrôleur
+3. **Lance le script Python** (`python/send_time_pc.py`) si besoin pour envoyer l’heure depuis le PC.
+4. **Accède à la page web** générée par le microcontrôleur (voir IP affichée dans le moniteur série).
 
-## Aperçu
+## ✨Aperçu
 
 ![Photo](docs/photo_montage.jpg)
+
