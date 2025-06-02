@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Réveil Connecté</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding-top: 50px; }
+    h1 { font-size: 2em; margin-bottom: 1em; }
+    .val { font-size: 1.5em; margin: 10px 0; }
+  </style>
+</head>
+<body>
+  <h1>⏰ Horloge Connecté</h1>
+  <div class="val"> Heure : <span id="heure">--:--</span></div>
+  <div class="val"> Température : <span id="temp">--</span> °C</div>
+  <div class="val"> Humidité : <span id="hum">--</span> %</div>
+
+  <script>
+    async function fetchData() {
+      const res = await fetch("/data");
+      const json = await res.json();
+      document.getElementById("heure").textContent = json.heure;
+      document.getElementById("temp").textContent = json.temperature;
+      document.getElementById("hum").textContent = json.humidite;
+    }
+
+    fetchData();
+    setInterval(fetchData, 3000);
+  </script>
+</body>
+</html>
 
