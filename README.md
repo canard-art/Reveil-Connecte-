@@ -23,5 +23,5 @@ Un réveil qui affiche l’heure, la température, l’humidité et la luminosit
 
 ## ✨Aperçu
 
-[Voir la démo vidéo](Docs/vidéo/projet.md)
+[Voir la démo vidéo](Docs/Vidéo/projet.mp4)
 
