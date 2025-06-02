@@ -15,7 +15,7 @@ Un réveil qui affiche l’heure, la température, l’humidité et la luminosit
 
 - `arduino/` : Code microcontrôleur
 - `web/` : (optionnel) fichiers du site web embarqué
-- `docs/` : vidéo
+- `docs/` : vidéo, images
 
 ## ⚡Fonctionnalités
 - Affichage de l’heure en temps réel
