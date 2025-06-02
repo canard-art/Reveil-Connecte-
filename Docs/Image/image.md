@@ -1,1 +1,1 @@
-![Mon image de démonstration](projet.png)
+![Image](projet.jpg)
