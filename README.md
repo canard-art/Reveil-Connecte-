@@ -14,7 +14,7 @@ Un réveil qui affiche l’heure, la température, l’humidité et la luminosit
 ## 📦 Organisation du dépôt
 
 - `arduino/` : Code microcontrôleur
-- `web/` : (optionnel) fichiers du site web embarqué
+- `web/` : fichiers du site web embarqué
 - `docs/` : vidéo, images
 
 ## ⚡Fonctionnalités
