@@ -1,0 +1,54 @@
+Ce document explique comment faire fonctionner notre projet, qui permet de lire les données d’un capteur SHTC3 (température et humidité), de les afficher sur une page web, et de synchroniser l'heure depuis l’ordinateur.
+Prérequis
+
+Avant de commencer, vous devez installer :
+
+  - Arduino IDE (pour programmer le microcontrôleur)
+
+  - Un éditeur de code Python tel que Thonny ou VS Code
+
+  - Le module Python Flask (voir plus bas pour l'installation)
+
+
+Installation :
+
+Pour uploader le code sur le microcontrôleur :
+
+      - Ouvrez le fichier combov1 dans l’IDE Arduino.
+
+      - Téléversez ce fichier sur votre microcontrôleur.
+
+      - Cela activera la lecture des valeurs du capteur SHTC3 et préparera la communication avec l’ordinateur.
+
+Préparer le serveur web :
+
+        Placez l'intégralité du dossier Site dans le répertoire de votre choix. Ce dossier contient le script Python permettant la communication entre le PC et le microcontrôleur, ainsi 	que le code de la page web.
+
+Lancer le serveur web :
+
+   - Ouvrez un terminal à l’intérieur du dossier Site.
+
+   - Installez Flask avec : pip install flask
+
+Lancez le script Flask avec : py appv2.py
+(Attention ! des erreurs peuvent survenir si le mauvais port série est sélectionné dans le code Arduino ou dans le script Python)
+
+Résultat attendu :
+
+   - L’heure de votre ordinateur sera affichée sur le microcontrôleur.
+
+   - Les données du capteur "température et humidité" ainsi que l'heure seront visibles sur une page web, actualisées toutes les 3 secondes.
+
+Accédez à la page via ce lien : http://localhost:5000
+
+
+Accès depuis d'autres appareils :
+
+Si vous êtes sur le même réseau local que l’ordinateur, vous pouvez accéder à la page web depuis un smartphone ou un autre appareil.
+
+  - Dans un terminal, exécutez la commande : ipconfig
+
+  - Récupérez l’adresse IPv4 de votre machine.
+
+Depuis un autre appareil, ouvrez un navigateur et entrez l’URL suivante (en remplaçant l'adresse) : http://<adresse IPv4>:5000
+
